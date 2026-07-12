@@ -425,12 +425,15 @@ footer hr{
         text-align:center;
         gap:15px;
     }
-
     .liens{
-        justify-content:center;
-        flex-wrap:wrap;
-    }
 
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        gap:10px;
+        flex-wrap:wrap;
+
+    }
     .hero,
     .services,
     .histoire,
