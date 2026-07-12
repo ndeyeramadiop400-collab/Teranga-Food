@@ -1,3 +1,7 @@
+/*==================================
+    TERANGA FOOD
+==================================*/
+
 *{
     margin:0;
     padding:0;
@@ -9,19 +13,41 @@ html{
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Arial,Helvetica,sans-serif;
     overflow-x:hidden;
+    background:#fff;
+    color:#222;
 }
 
+img{
+    max-width:100%;
+    display:block;
+}
+
+section{
+    padding:80px 8%;
+}
+
+/*====================
+HEADER
+====================*/
+
 header{
+    width:100%;
     background:#fff;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
 .entete{
+    max-width:1300px;
+    margin:auto;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:15px 8%;
+    padding:15px 30px;
 }
 
 .logo{
@@ -31,24 +57,47 @@ header{
 }
 
 .logo img{
-    width:100px;
+    width:80px;
 }
 
 .logo h2{
-    font-size:32px;
+    font-size:30px;
 }
 
 .logo span{
-    color:orange;
+    color:#ff6b00;
 }
-/* =======================
-   WELCOME
-======================= */
+
+.liens{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.liens a{
+    text-decoration:none;
+    color:#222;
+    display:flex;
+    align-items:center;
+    gap:6px;
+    padding:10px 16px;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.liens a:hover{
+    background:#ff6b00;
+    color:white;
+}
+
+/*====================
+WELCOME
+====================*/
 
 .welcome{
-    background:orange;
+    background:#ff6b00;
     color:white;
-    padding:10px 0;
+    padding:10px;
     text-align:center;
     font-weight:bold;
 }
@@ -56,407 +105,183 @@ header{
 .welcome marquee{
     font-size:18px;
 }
-.liens{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:12px;
-    margin-top:20px;
-}
 
-.liens a{
-    display:flex;
-    align-items:center;
-    gap:6px;
-    color:#222;
-    text-decoration:none;
-    transition:.3s;
-}
+/*====================
+HERO
+====================*/
 
-.liens a:hover{
-    background:orange;
-    color:#fff;
-    padding:8px 15px;
-    border-radius:8px;
-}
-/* =======================
-   SERVICES
-======================= */
+.hero{
 
-.services{
     background:
-    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-    url("https://img.magnific.com/free-photo/top-view-different-seasonings-with-greens-grey-background_140725-126048.jpg?semt=ais_hybrid&w=740&q=80");
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("https://media.istockphoto.com/id/104704117/fr/photo/plats-du-restaurant.jpg?s=612x612&w=0&k=20&c=LjWTB5Ed9TlXG239T3apgo0GifWhLA1oQjxH84P1T2Q=");
+
     background-size:cover;
     background-position:center;
-    padding:80px 8%;
+
     display:flex;
     justify-content:space-between;
     align-items:center;
-    gap:50px;
+    gap:60px;
 }
 
-.services-content{
+.texte{
     flex:1;
     color:white;
 }
 
+.texte h2{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.texte p{
+    font-size:20px;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.image-rotation{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.image-rotation img{
+    width:430px;
+    animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+
+0%,100%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-15px);
+}
+
+}
+
+/*====================
+BOUTONS
+====================*/
+
+.btn,
+.btn2,
+.btn-commande,
+.btn-commander,
+button{
+
+    background:#ff6b00;
+    color:white;
+    padding:15px 30px;
+    border:none;
+    border-radius:35px;
+    text-decoration:none;
+    display:inline-block;
+    cursor:pointer;
+    transition:.3s;
+    font-weight:bold;
+}
+
+.btn:hover,
+.btn2:hover,
+.btn-commande:hover,
+.btn-commander:hover,
+button:hover{
+
+    background:#1B4332;
+    transform:translateY(-5px);
+}
+/*==================================
+SERVICES
+==================================*/
+
+.services{
+
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url("https://img.magnific.com/free-photo/top-view-different-seasonings-with-greens-grey-background_140725-126048.jpg?semt=ais_hybrid&w=740&q=80");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.services-content{
+    max-width:900px;
+    color:white;
+}
+
 .services-content h2{
+
     color:#ff6b00;
     font-size:45px;
     margin-bottom:20px;
 }
 
 .services-content p{
-    font-size:20px;
+
     line-height:1.8;
+    font-size:20px;
 }
 
 .avantages{
-    margin-top:25px;
+
+    margin-top:30px;
 }
 
 .avantages p{
-    margin:12px 0;
-    font-weight:bold;
-}
 
-/* =======================
-   TEMOIGNAGES
-======================= */
-
-.temoignage{
-    padding:80px 8%;
-    background:#f8f8f8;
-    text-align:center;
-}
-
-.temoignage h2{
-    color:#ff6b00;
-    font-size:42px;
-    margin-bottom:40px;
-}
-
-.avis-container{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:30px;
-}
-
-.avis{
-    width:320px;
-    background:white;
-    border-radius:20px;
-    padding:25px;
-    box-shadow:0 5px 15px rgba(0,0,0,.15);
-    transition:.4s;
-}
-
-.avis:hover{
-    transform:translateY(-10px);
-}
-
-.avis img{
-    width:90px;
-    height:90px;
-    border-radius:50%;
-    object-fit:cover;
-    border:4px solid orange;
-}
-
-.avis h3{
     margin:15px 0;
-}
-
-.avis p{
-    color:#666;
-    line-height:1.7;
-}
-
-.avis h4{
-    color:gold;
-}
-/* =======================
-   BOISSONS
-======================= */
-
-.boissons{
-    padding:80px 8%;
-    background:#f8f8f8;
-    text-align:center;
-}
-
-.boissons h1{
-    font-size:42px;
-    color:#ff6b00;
-    margin-bottom:15px;
-}
-
-.boissons p{
-    color:#555;
-    margin-bottom:40px;
-}
-
-.boissons .cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
-}
-
-/* =======================
-   HORAIRES
-======================= */
-
-.horaires{
-    width:90%;
-    max-width:550px;
-    margin:60px auto;
-    background:#fff;
-    padding:30px;
-    border-radius:20px;
-    box-shadow:0 5px 15px rgba(0,0,0,.15);
-}
-
-.horaires h2{
-    text-align:center;
-    color:#ff6b00;
-    margin-bottom:15px;
-}
-
-.horaire{
-    display:flex;
-    justify-content:space-between;
-    padding:15px 0;
-    border-bottom:1px solid #ddd;
-}
-
-.horaire:last-child{
-    border-bottom:none;
-}
-
-/* =======================
-   COMMANDE
-======================= */
-
-.commande{
-    width:90%;
-    margin:80px auto;
-    text-align:center;
-}
-
-.commande h1{
-    color:#ff6b00;
-    font-size:45px;
-}
-
-.commande p{
-    color:#666;
-    margin:20px auto 40px;
-    max-width:700px;
-    line-height:1.8;
-}
-
-/* =======================
-   FORMULAIRE
-======================= */
-
-form{
-    display:flex;
-    flex-direction:column;
-    gap:20px;
-}
-
-.champ{
-    display:flex;
-    flex-direction:column;
-}
-
-label{
-    margin-bottom:8px;
     font-weight:bold;
 }
 
-input,
-select,
-textarea{
-    width:100%;
-    padding:15px;
-    border:1px solid #ddd;
-    border-radius:10px;
-    font-size:16px;
-    outline:none;
-}
+/*==================================
+TITRES
+==================================*/
 
-input:focus,
-select:focus,
-textarea:focus{
-    border-color:#ff6b00;
-}
+.plats h1,
+.boissons h1,
+.commande h1,
+.temoignage h2,
+.valeurs h2,
+.equipe h2,
+.titre h1{
 
-textarea{
-    min-height:140px;
-    resize:none;
-}
-
-/* =======================
-   BOUTON FORMULAIRE
-======================= */
-
-form button{
-    background:#ff6b00;
-    color:#fff;
-    padding:15px;
-    border:none;
-    border-radius:30px;
-    cursor:pointer;
-    transition:.3s;
-}
-
-form button:hover{
-    background:#1B4332;
-}
-/* =======================
-   PLATS
-======================= */
-
-.plats{
-    padding:80px 8%;
     text-align:center;
-}
-
-.plats h1{
     color:#ff6b00;
     margin-bottom:40px;
-}
-/* =======================
-   VALEURS
-======================= */
-
-.valeurs{
-    width:90%;
-    margin:80px auto;
-    text-align:center;
+    font-size:42px;
 }
 
-.valeurs h2{
-    color:#ff6b00;
-    font-size:40px;
-    margin-bottom:40px;
-}
+/*==================================
+CARDS
+==================================*/
 
-.cartes{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:30px;
-}
 .cards{
+
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
     gap:30px;
 }
-.carte{
-    width:260px;
-    background:#fff;
-    padding:30px 20px;
-    border-radius:15px;
-    text-align:center;
-    box-shadow:0 5px 15px rgba(0,0,0,.15);
-    transition:.4s;
-}
 
-.carte:hover{
-    transform:translateY(-10px);
-}
-
-.carte i{
-    font-size:45px;
-    color:#ff6b00;
-    margin-bottom:20px;
-}
-
-.carte h3{
-    margin-bottom:10px;
-    color:#222;
-}
-
-.carte p{
-    color:#666;
-    line-height:1.6;
-}
-.btn-commander{
-    display:inline-block;
-    margin:20px;
-}
-.hero{
-    background:
-    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-    url("https://media.istockphoto.com/id/104704117/fr/photo/plats-du-restaurant.jpg?s=612x612&w=0&k=20&c=LjWTB5Ed9TlXG239T3apgo0GifWhLA1oQjxH84P1T2Q=");
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap:60px;
-    padding:80px 8%;
-}
-
-.hero-content{
-    flex:1;
-}
-
-.hero-content h2{
-    color:#fff;
-    font-size:48px;
-    margin-bottom:20px;
-}
-
-.hero-content p{
-    color:#ddd;
-    font-size:18px;
-    line-height:1.8;
-}
-
-.hero-image{
-    flex:1;
-    text-align:center;
-}
-
-.hero-image img{
-    width:400px;
-    max-width:100%;
-    border-radius:20px;
-}
-.btn,
-.btn2,
-.btn-commande,
-.btn-commander{
-    width:auto;
-    display:inline-block;
-}
-
-button:hover,
-.btn:hover,
-.btn2:hover,
-.btn-commande:hover,
-.btn-commander:hover{
-
-    background:#1B4332;
-    transform:translateY(-5px);
-}
 .card{
 
-    background:#fff;
-    border-radius:15px;
+    background:white;
+    border-radius:18px;
     overflow:hidden;
     box-shadow:0 5px 15px rgba(0,0,0,.15);
     transition:.4s;
+    text-align:center;
 }
-section{
-    padding-left:20px;
-    padding-right:20px;
-}
+
 .card:hover{
 
     transform:translateY(-10px);
@@ -471,429 +296,447 @@ section{
 
 .card h2{
 
-    margin:15px 0;
+    margin:20px 15px 10px;
+}
+
+.card h3{
+
+    color:#ff6b00;
+    margin-bottom:15px;
 }
 
 .card p{
 
     padding:0 20px 20px;
-}
-.apropos{
-    width:90%;
-    margin:80px auto;
-}
-
-.titre{
-    text-align:center;
-    margin-bottom:50px;
-}
-
-.titre h1{
-    font-size:45px;
-    color:#ff6b00;
-}
-
-.titre p{
-    color:#666;
-    font-size:18px;
-}
-
-.histoire{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:50px;
-}
-
-.image,
-.texte{
-    width:50%;
-}
-
-.image img{
-    width:100%;
-    height:auto;
-    border-radius:20px;
-}
-
-.texte h2{
-    color:#ff6b00;
-    margin-bottom:20px;
-}
-
-.texte p{
-    line-height:1.8;
     color:#555;
-    text-align:justify;
+    line-height:1.6;
 }
-.equipe{
-    width:90%;
-    margin:80px auto;
+
+/*==================================
+TEMOIGNAGES
+==================================*/
+
+.temoignage{
+
+    background:#f7f7f7;
     text-align:center;
 }
 
-.equipe h2{
-    color:#ff6b00;
-    margin-bottom:40px;
-}
+.avis-container{
 
-.membres{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
     gap:30px;
 }
 
-.membre{
-    width:260px;
-    background:#fff;
-    border-radius:15px;
-    padding:20px;
+.avis{
+
+    background:white;
+    border-radius:18px;
+    padding:30px;
     box-shadow:0 5px 15px rgba(0,0,0,.15);
     transition:.4s;
 }
 
-.membre:hover{
+.avis:hover{
+
     transform:translateY(-10px);
 }
 
-.membre img{
-    width:160px;
-    height:160px;
+.profil{
+
+    width:90px;
+    height:90px;
+    margin:auto;
     border-radius:50%;
-    object-fit:cover;
-}
-
-.membre p{
-    color:orange;
-}
-.stats{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:25px;
-    margin:60px auto;
-}
-
-.stat-box{
-    width:220px;
-    height:220px;
-    background:orange;
-    border-radius:15px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    transition:.4s;
-}
-
-.stat-box:hover{
-    background:white;
-    transform:translateY(-10px);
-}
-
-.stat-box h3{
-    font-size:32px;
-}
-
-.stat-box p{
+    background:#ff6b00;
     color:white;
-}
-
-.stat-box:hover h3,
-.stat-box:hover p{
-    color:orange;
-}
-.reservation{
-    width:90%;
-    margin:80px auto;
     display:flex;
-    align-items:center;
     justify-content:center;
-    gap:50px;
+    align-items:center;
+    font-size:40px;
 }
 
-.reservation-image,
-.reservation-form{
-    width:50%;
+.avis h3{
+
+    margin:20px 0 10px;
 }
 
-.reservation-image img{
-    width:100%;
-    height:auto;
-    border-radius:20px;
-}
-/* =======================
-   ANIMATIONS
-======================= */
+.avis p{
 
-.card,
-.membre,
-.avis,
-.stat-box,
-.carte{
-    transition:0.4s ease;
+    color:#666;
+    line-height:1.8;
 }
 
-.card:hover,
-.membre:hover,
-.avis:hover,
-.stat-box:hover,
-.carte:hover{
-    transform:translateY(-10px);
+.avis h4{
+
+    color:gold;
+    margin-top:15px;
 }
 
-.hero-content{
-    animation:fadeLeft 1s ease;
-}
+/*==================================
+HORAIRES
+==================================*/
 
-.hero-image{
-    animation:fadeRight 1s ease;
-}
+.horaires{
 
-@keyframes fadeLeft{
-
-    from{
-        opacity:0;
-        transform:translateX(-50px);
-    }
-
-    to{
-        opacity:1;
-        transform:translateX(0);
-    }
-
-}
-
-@keyframes fadeRight{
-
-    from{
-        opacity:0;
-        transform:translateX(50px);
-    }
-
-    to{
-        opacity:1;
-        transform:translateX(0);
-    }
-
-}
-.reservation-form{
+    max-width:650px;
+    margin:80px auto;
     background:white;
     padding:35px;
     border-radius:20px;
     box-shadow:0 5px 15px rgba(0,0,0,.15);
 }
-footer{
-    background:#1f1f1f;
-    color:white;
-    text-align:center;
-    padding:40px 20px;
-}
 
-footer h3{
+.horaires h2{
+
     color:#ff6b00;
+    text-align:center;
     margin-bottom:15px;
 }
 
-footer p{
-    color:#ddd;
-    margin:10px 0;
+.horaires p{
+
+    text-align:center;
+    margin-bottom:20px;
 }
 
-footer hr{
-    width:80%;
-    margin:25px auto;
-}
+.horaire{
 
-.copyright{
-    color:#999;
-}
-@media (max-width:425px){
-.entete{
     display:flex;
     justify-content:space-between;
-    align-items:center;
-    padding:10px 15px;
+    padding:15px 0;
+    border-bottom:1px solid #ddd;
 }
 
-.logo{
+/*==================================
+A PROPOS
+==================================*/
+
+.apropos{
+
+    max-width:1300px;
+    margin:auto;
+}
+
+.histoire{
+
     display:flex;
     align-items:center;
-    gap:8px;
+    gap:50px;
 }
 
-.logo img{
-    width:60px;
+.image,
+.texte{
+
+    flex:1;
 }
 
-.logo h2{
-    font-size:22px;
+.image img{
+
+    border-radius:20px;
 }
 
-.liens{
-    display:flex;
-    justify-content:flex-end;
-    align-items:center;
-    gap:10px;
-    flex-wrap:nowrap;
+.texte p{
+
+    line-height:1.8;
+    color:#555;
 }
 
-.liens a{
-    font-size:13px;
-    padding:5px;
-    margin:0;
-}
-    .services{
-    flex-direction:column;
+/*==================================
+EQUIPE
+==================================*/
+
+.equipe{
+
     text-align:center;
 }
 
-.services-content{
-    width:100%;
-}
+.membres{
 
-.avis{
-    width:100%;
-}
-
-.cards{
-    grid-template-columns:1fr;
-}
-    .liens{
-        flex-direction:column;
-        gap:15px;
-        margin-top:20px;
-    }
-.hero{
-    flex-direction:column-reverse;
-    padding:50px 20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
     gap:30px;
+}
+
+.membre{
+
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+.membre:hover{
+
+    transform:translateY(-10px);
+}
+
+.membre img{
+
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    object-fit:cover;
+    margin:auto;
+}
+
+.membre h3{
+
+    margin:20px 0 10px;
+}
+
+.membre p{
+
+    color:#ff6b00;
+}
+
+/*==================================
+VALEURS & STATS
+==================================*/
+
+.cartes{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:30px;
+}
+
+.carte,
+.stat-box{
+
+    background:white;
+    border-radius:18px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.carte i{
+
+    font-size:45px;
+    color:#ff6b00;
+    margin-bottom:20px;
+}
+
+.stats{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.stat-box{
+
+    background:#ff6b00;
+    color:white;
+}
+
+.stat-box h3{
+
+    font-size:35px;
+    margin-bottom:10px;
+}
+.services{
+    padding:70px 8%;
+    text-align:center;
+    background:#fff;
+}
+
+.services h2{
+    font-size:35px;
+    margin-bottom:40px;
+    color:#222;
+}
+
+.services-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.service-card{
+    padding:30px;
+    border-radius:15px;
+    background:#fff;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    transition:.4s;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+}
+
+.service-card i{
+    font-size:40px;
+    color:#ff7f50;
+    margin-bottom:15px;
+}
+
+.service-card h3{
+    margin-bottom:10px;
+    color:#222;
+}
+
+.service-card p{
+    color:#666;
+}
+.temoignage{
+    padding:70px 8%;
+    background:#f8f8f8;
     text-align:center;
 }
 
-    .hero-content,
-    .hero-image{
-        width:100%;
-    }
-
-    .hero-image img{
-        width:90%;
-    }
-.cartes{
-    flex-direction:column;
-    align-items:center;
+.temoignage h2{
+    font-size:35px;
+    margin-bottom:40px;
 }
 
-.carte{
-    width:90%;
-}
-    .histoire{
-        flex-direction:column;
-    }
-
-    .image,
-    .texte{
-        width:100%;
-    }
-
-    .reservation{
-        flex-direction:column;
-    }
-
-    .reservation-image,
-    .reservation-form{
-        width:100%;
-    }
-
-    .membres{
-        flex-direction:column;
-        align-items:center;
-    }
-
-    .membre{
-        width:90%;
-    }
-
-    .stats{
-        flex-direction:column;
-        align-items:center;
-    }
-    .horaires{
-    width:95%;
+.temoignage-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
 }
 
-.commande{
-    width:95%;
+.temoignage-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
 }
 
-form{
+.temoignage-card img{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.temoignage-card p{
+    margin:15px 0;
+    color:#555;
+    font-style:italic;
+}
+
+.temoignage-card h3{
+    color:#ff7f50;
+}
+.plats{
+    padding:70px 8%;
+    text-align:center;
+}
+
+.plats h2{
+    font-size:35px;
+    margin-bottom:40px;
+}
+
+.plats-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.plat-card{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.4s;
+}
+
+.plat-card:hover{
+    transform:scale(1.05);
+}
+
+.plat-card img{
     width:100%;
+    height:220px;
+    object-fit:cover;
 }
 
-input,
-select,
-textarea{
-    font-size:15px;
+.plat-card h3{
+    margin:15px 0 5px;
+    color:#222;
 }
-    .stat-box{
-        width:90%;
-        max-width:250px;
+
+.plat-card p{
+    color:#666;
+    padding:0 15px 15px;
+}
+
+.prix{
+    color:#ff7f50;
+    font-weight:bold;
+}
+@media(max-width:900px){
+
+    .services-container,
+    .temoignage-container{
+        grid-template-columns:1fr;
     }
 
-    .cartes{
+    .plats-container{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+@media(max-width:768px){
+
+    /* Services */
+    .services-container{
+        grid-template-columns:1fr;
+    }
+
+
+    /* Témoignages */
+    .temoignage-container{
+        grid-template-columns:1fr;
+    }
+
+
+    /* Plats */
+    .plats-container{
+        grid-template-columns:1fr;
+    }
+
+
+    /* Boissons */
+    .boissons-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+
+    /* Contact */
+    .contact-container{
         flex-direction:column;
     }
 
-    .services{
+
+    /* Header */
+    .entete{
         flex-direction:column;
+        gap:20px;
     }
 
-    .services-content{
-        width:100%;
+
+    nav ul{
+        flex-direction:column;
         text-align:center;
     }
 
-    .horaires{
-        width:95%;
+
+    /* Titres */
+    .services h2,
+    .temoignage h2,
+    .plats h2,
+    .boissons h2,
+    .reservation h2,
+    .contact h2{
+
+        font-size:28px;
+
     }
 
-    .cards{
-        grid-template-columns:1fr;
-    }
-.hero-content h2{
-    font-size:35px;
-}
-
-.hero-content p{
-    font-size:17px;
-}
-
-.logo h2{
-    font-size:26px;
-}
-
-.plats h1,
-.boissons h1,
-.commande h1,
-.titre h1,
-.temoignage h2{
-    font-size:32px;
-}
-
-.services-content h2{
-    font-size:34px;
-}
-
-.services-content p{
-    font-size:18px;
-}
-
-.btn,
-.btn2,
-.btn-commande,
-.btn-commander{
-    width:100%;
-    text-align:center;
-}
 }
