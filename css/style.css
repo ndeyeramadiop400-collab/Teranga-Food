@@ -69,7 +69,7 @@ header{
     align-items:center;
     justify-content:center;
     gap:5px;
-    flex-wrap:nowrap;
+    flex-wrap:wrap;
 }
 .liens a{
     color:#222;
