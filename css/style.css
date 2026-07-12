@@ -122,6 +122,12 @@ HERO
     align-items:center;
     gap:60px;
 }
+.hero h2{
+    color:orange;
+}
+.hero p{
+    color:white;
+}
 .texte{
     flex:1;
     color:white;
@@ -141,7 +147,7 @@ HERO
     justify-content:center;
 }
 .image-rotation img{
-    width:430px;
+    width:300px;
     animation:rotate 20s linear infinit;
 }
 @keyframes float{
