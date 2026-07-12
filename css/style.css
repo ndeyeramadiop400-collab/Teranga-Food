@@ -219,7 +219,6 @@ button{
 .btn-commande:hover,
 .btn-commander:hover,
 button:hover{
-
     background:#1B4332;
 }
 form{
@@ -228,11 +227,9 @@ form{
     flex-direction:column;
     gap:20px;
 }
-
 input,
 select,
 textarea{
-
     width:100%;
     padding:15px;
     border:1px solid #ddd;
@@ -245,7 +242,6 @@ textarea{
     gap:30px;
     margin-top:40px;
 }
-
 .membre{
     background:#fff;
     padding:25px;
@@ -254,11 +250,9 @@ textarea{
     box-shadow:0 5px 15px rgba(0,0,0,.15);
     transition:.4s;
 }
-
 .membre:hover{
     transform:translateY(-10px);
 }
-
 .membre img{
     width:170px;
     height:170px;
@@ -267,11 +261,9 @@ textarea{
     margin:auto;
     border:5px solid orange;
 }
-
 .membre h3{
     margin-top:20px;
 }
-
 .membre p{
     color:orange;
     font-weight:bold;
@@ -309,50 +301,37 @@ textarea{
     margin-bottom:15px;
 }
 footer{
-
     background:#1f1f1f;
     color:white;
     text-align:center;
     padding:50px 20px;
 }
-
 footer h3{
-
     color:orange;
     margin-bottom:15px;
 }
-
 footer p{
-
     margin:10px 0;
     color:#ddd;
 }
-
 footer hr{
-
     width:80%;
     margin:25px auto;
 }
-
 .copyright{
-
     color:#aaa;
 }
 @media(max-width:992px){
-
 .entete{
     padding:15px 20px;
 }
-
 .hero,
 .services,
 .histoire,
 .reservation{
-
     flex-direction:column;
     text-align:center;
 }
-
 .hero .texte,
 .hero .image-rotation,
 .services-content,
@@ -360,54 +339,38 @@ footer hr{
 .texte,
 .reservation-image,
 .reservation-form{
-
     width:100%;
 }
-
 .hero .texte h2{
     font-size:40px;
 }
-
 .cards{
     grid-template-columns:repeat(2,1fr);
 }
-
 .stats,
 .cartes,
 .membres{
-
     justify-content:center;
 }
-
 }
-
 @media(max-width:768px){
-
 .logo img{
     width:70px;
 }
-
 .logo h2{
     font-size:24px;
 }
-
 .entete{
-
     flex-direction:column;
     gap:15px;
 }
-
 .liens{
-
     flex-wrap:wrap;
     justify-content:center;
 }
-
 .hero{
-
     padding:60px 20px;
 }
-
 .hero .texte h2{
     font-size:32px;
 }
@@ -415,17 +378,12 @@ footer hr{
 .hero .texte p{
     font-size:17px;
 }
-
 .cards{
-
     grid-template-columns:1fr;
 }
-
 .card{
-
     width:100%;
 }
-
 .stat-box,
 .carte,
 .membre{
@@ -436,64 +394,54 @@ footer hr{
 
 }
 .histoire{
-    flex-direction:column;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
 }
 
-.image,
-.texte{
-    width:100%;
-}
-
-.image img{
-    max-width:100%;
-}
-
-.texte{
+.image{
+    flex:1;
     text-align:center;
 }
-
-.texte p{
-    text-align:justify;
+.texte{
+    flex:1;
+    min-width:300px;
+}
+.image img{
+    width:100%;
+    max-width:420px;
+    height:auto;
+    border-radius:20px;
+    object-fit:cover;
 }
 section{
 
     padding:50px 15px;
 }
-
 .logo img{
     width:60px;
 }
-
 .logo h2{
     font-size:20px;
 }
-
 .liens{
-
     gap:8px;
 }
-
 .liens a{
-
     font-size:14px;
     padding:8px;
 }
-
 .hero .texte h2{
-
     font-size:28px;
 }
-
 .hero .texte p{
-
     font-size:16px;
 }
-
 .card img{
-
     height:200px;
 }
-
 button,
 .btn,
 .btn2,
