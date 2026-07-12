@@ -204,16 +204,11 @@ box-shadow:0 5px 20px rgba(0,0,0,.15);
 transition:.3s;
 
 }
-
-
 .menu-card:hover{
 
 transform:translateY(-10px);
 
 }
-
-
-
 .menu-card img{
 
 width:100%;
@@ -221,9 +216,6 @@ height:230px;
 object-fit:cover;
 
 }
-
-
-
 .menu-card h3{
 
 font-size:22px;
@@ -231,9 +223,6 @@ margin:15px;
 color:#222;
 
 }
-
-
-
 .menu-card p{
 
 margin:0 15px 15px;
@@ -265,6 +254,23 @@ transition:.3s;
 
 background:#222;
 color:white;
+}
+.btn-reservation{
+
+background:#222;
+color:white;
+padding:15px 35px;
+border-radius:30px;
+border:none;
+font-size:18px;
+cursor:pointer;
+transition:.3s;
+
+}
+.btn-reservation:hover{
+
+background:#ff7f50;
+
 }
 /*====================
 BOUTONS
@@ -300,40 +306,43 @@ button:hover{
 /*==================================
 SERVICES
 ==================================*/
-
 .services{
 
+    min-height:500px;
     background:
     linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
     url("https://img.magnific.com/free-photo/top-view-different-seasonings-with-greens-grey-background_140725-126048.jpg?semt=ais_hybrid&w=740&q=80");
 
     background-size:cover;
     background-position:center;
+    background-attachment:fixed;
 
     display:flex;
     justify-content:center;
     align-items:center;
     text-align:center;
-}
 
+    padding:80px 8%;
+
+}
 .services-content{
+
     max-width:900px;
     color:white;
-}
 
+}
 .services-content h2{
 
-    color:#ff6b00;
+    color:#ff7f50;
     font-size:45px;
-    margin-bottom:20px;
+    margin-bottom:25px;
 }
-
 .services-content p{
-
     line-height:1.8;
     font-size:20px;
-}
+    color:#f1f1f1;
 
+}
 .avantages{
 
     margin-top:30px;
