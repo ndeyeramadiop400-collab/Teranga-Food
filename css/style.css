@@ -142,7 +142,7 @@ HERO
 }
 .image-rotation img{
     width:430px;
-    animation:float 4s ease-in-out infinite;
+    animation:rotate 20s linear infinit;
 }
 @keyframes float{
 0%,100%{
@@ -310,7 +310,6 @@ SERVICES
 
     min-height:500px;
     background:
-    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
     url("https://img.magnific.com/free-photo/top-view-different-seasonings-with-greens-grey-background_140725-126048.jpg?semt=ais_hybrid&w=740&q=80");
 
     background-size:cover;
@@ -427,7 +426,7 @@ CARDS
 TEMOIGNAGES
 ==================================*/
 
-.temoignage{
+.temoignag{
 
     background:#f7f7f7;
     text-align:center;
@@ -648,46 +647,6 @@ VALEURS & STATS
 
     font-size:35px;
     margin-bottom:10px;
-}
-.temoignage{
-    padding:70px 8%;
-    background:#f8f8f8;
-    text-align:center;
-}
-
-.temoignage h2{
-    font-size:35px;
-    margin-bottom:40px;
-}
-
-.temoignage-container{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px;
-}
-
-.temoignage-card{
-    background:white;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
-}
-
-.temoignage-card img{
-    width:80px;
-    height:80px;
-    border-radius:50%;
-    object-fit:cover;
-}
-
-.temoignage-card p{
-    margin:15px 0;
-    color:#555;
-    font-style:italic;
-}
-
-.temoignage-card h3{
-    color:#ff7f50;
 }
 .plats{
     padding:70px 8%;
