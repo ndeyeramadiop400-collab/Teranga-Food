@@ -66,7 +66,7 @@ header{
 .liens{
 
     display:flex !important;
-    flex-direction:row !important;
+    flex-direction:coloum;
     align-items:center;
     justify-content:center;
     gap:15px;
@@ -492,6 +492,7 @@ footer hr{
 
     .liens{
         width:100%;
+         flex-direction:column;
     }
 
     .liens a{
