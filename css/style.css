@@ -709,7 +709,7 @@ footer hr{
 .copyright{
     color:#999;
 }
-@media (width:768px){
+@media (max-width:425px){
 .entete{
     display:flex;
     justify-content:space-between;
