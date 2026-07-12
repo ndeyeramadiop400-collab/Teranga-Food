@@ -243,111 +243,80 @@ font-size:20px;
 font-weight:bold;
 color:#ff7f50;
 }
-.commande,
 .reservation{
-
-    padding:80px 8%;
-
-    display:flex;
-
-    justify-content:center;
-
-    background:#f8f8f8;
-
+    width: 80%;
+    margin: 80px auto;
+    text-align: center;
 }
 
-
-.commande-box,
-.reservation-box{
-
-
-    width:600px;
-
-    background:white;
-
-    padding:40px;
-
-
-    border-radius:20px;
-
-
-    box-shadow:
-    0 10px 30px rgba(0,0,0,.15);
-
-
+.reservation h2{
+    font-size: 40px;
+    margin-bottom: 10px;
 }
 
-
-
-.commande-box h2,
-.reservation-box h2{
-
-    text-align:center;
-
-    color:#ff6b00;
-
-    font-size:35px;
-
-    margin-bottom:15px;
-
+.reservation p{
+    margin-bottom: 30px;
+    color: #555;
+}
+.btn-commander{
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
 }
 
-
-
-.commande-box p,
-.reservation-box p{
-
-    text-align:center;
-
-    color:#666;
-
-    margin-bottom:30px;
-
+.btn-commander:hover{
+    background: green;
+    transform: scale(1.05);
+}
+form{
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,.15);
 }
 
-
-
-.commande-box form,
-.reservation-box form{
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:15px;
-
+.champ{
+    margin-bottom: 20px;
+    text-align: left;
 }
-.commande-box input,
-.commande-box select,
-.commande-box textarea,
-.reservation-box input,
-.reservation-box select,
-.reservation-box textarea{
-    padding:15px;
-    border:1px solid #ddd;
-    border-radius:10px;
-    font-size:16px;
-}
-.commande-box textarea,
-.reservation-box textarea{
-    height:120px;
-}
-.commande-box button,
-.reservation-box button{
-    padding:15px;
-    border:none;
-    border-radius:30px;
-    background:#ff6b00;
-    color:white;
-    font-size:17px;
-    font-weight:bold;
-    cursor:pointer;
-}
-.commande-box button:hover,
-.reservation-box button:hover{
 
-    background:#1B4332;
+label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
 
+input,
+select,
+textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button{
+    background: orange;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover{
+    background: darkorange;
+    transform: scale(1.05);
 }
 /*====================
 BOUTONS
