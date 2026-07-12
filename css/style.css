@@ -64,13 +64,12 @@ header{
     color:orange;
 }
 .liens{
-
-    display:flex !important;
+    display:flex;
     flex-direction:row;
     align-items:center;
     justify-content:center;
-    gap:15px;
-
+    gap:5px;
+    flex-wrap:nowrap;
 }
 .liens a{
     color:#222;
@@ -417,60 +416,43 @@ footer hr{
     color:#aaa;
 }
 @media(max-width:768px){
-
-    .entete{
+ .entete{
         flex-direction:row;
-        align-items:center;
+        padding:10px;
     }
-
-
+    .logo h2{
+        font-size:20px;
+    }
+    .logo img{
+        width:50px;
+    }
     .liens{
-
         display:flex;
         flex-direction:row;
-        justify-content:center;
-        flex-wrap:wrap;
-        gap:10px;
-        align-items:center;
+        gap:0;
+        flex-wrap:nowrap;
     }
-
-
     .liens a{
-
-        width:auto;
-
+        padding:5px;
+        font-size:11px;
+        white-space:nowrap;
     }
-
-
     .hero,
     .services,
     .histoire,
     .reservation{
-
         flex-direction:column;
         text-align:center;
-
     }
-
-
     .cards,
     .membres,
     .cartes{
-
         grid-template-columns:1fr;
-
     }
-
-
     .logo img{
-
         width:70px;
-
     }
-
-
     .logo h2{
-
         font-size:24px;
 
     }
