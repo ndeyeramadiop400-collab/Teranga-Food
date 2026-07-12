@@ -115,26 +115,21 @@ HERO
     background:
     linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
     url("https://media.istockphoto.com/id/104704117/fr/photo/plats-du-restaurant.jpg?s=612x612&w=0&k=20&c=LjWTB5Ed9TlXG239T3apgo0GifWhLA1oQjxH84P1T2Q=");
-
     background-size:cover;
     background-position:center;
-
     display:flex;
     justify-content:space-between;
     align-items:center;
     gap:60px;
 }
-
 .texte{
     flex:1;
     color:white;
 }
-
 .texte h2{
     font-size:50px;
     margin-bottom:20px;
 }
-
 .texte p{
     font-size:20px;
     line-height:1.8;
@@ -145,22 +140,17 @@ HERO
     display:flex;
     justify-content:center;
 }
-
 .image-rotation img{
     width:430px;
     animation:float 4s ease-in-out infinite;
 }
-
 @keyframes float{
-
 0%,100%{
 transform:translateY(0);
 }
-
 50%{
 transform:translateY(-15px);
 }
-
 }
 .menu{
 
@@ -182,9 +172,9 @@ transform:translateY(-15px);
     color:#666;
     font-size:18px;
     margin-bottom:50px;
-
 }
 .categorie-menu{
+
     margin-bottom:60px;
 
 }
@@ -195,6 +185,86 @@ transform:translateY(-15px);
     margin-bottom:30px;
     border-left:5px solid #ff7f50;
     padding-left:15px;
+}
+.menu-container{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+
+}
+
+
+.menu-card{
+
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+transition:.3s;
+
+}
+
+
+.menu-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+
+
+.menu-card img{
+
+width:100%;
+height:230px;
+object-fit:cover;
+
+}
+
+
+
+.menu-card h3{
+
+font-size:22px;
+margin:15px;
+color:#222;
+
+}
+
+
+
+.menu-card p{
+
+margin:0 15px 15px;
+color:#666;
+line-height:1.6;
+
+}
+.menu-card .prix{
+
+margin:15px;
+font-size:20px;
+font-weight:bold;
+color:#ff7f50;
+}
+.btn-commande{
+
+display:inline-block;
+background:#ff7f50;
+color:white;
+padding:12px 30px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+margin:15px;
+transition:.3s;
+
+}
+.btn-commande:hover{
+
+background:#222;
+color:white;
 }
 /*====================
 BOUTONS
