@@ -165,6 +165,44 @@ header{
     gap:30px;
     margin-top:40px;
 }
+.stats{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    padding:60px 8%;
+
+}
+
+
+.stat-box{
+
+    background:white;
+    padding:35px 20px;
+    text-align:center;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+
+.stat-box:hover{
+    transform:translateY(-10px);
+}
+.stat-box h3{
+    font-size:40px;
+    color:#ff6b00;
+    margin-bottom:15px;
+}
+.stat-box p{
+
+    color:#555;
+    font-size:18px;
+}
 /*=========================
       HORAIRES
 =========================*/
@@ -436,6 +474,9 @@ footer hr{
         padding:5px;
         font-size:11px;
         white-space:nowrap;
+    }
+     .stats{
+        grid-template-columns:1fr 1fr;
     }
     .hero,
     .services,
