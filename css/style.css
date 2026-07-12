@@ -287,14 +287,10 @@ textarea{
     gap:50px;
     margin-top:50px;
 }
-.image{
-    flex:1;
-}
 .image img{
     width:100%;
     max-width:380px;
     height:auto;
-    display:block;
     margin:auto;
     border-radius:20px;
 }
