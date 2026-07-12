@@ -140,7 +140,6 @@ HERO
     line-height:1.8;
     margin-bottom:30px;
 }
-
 .image-rotation{
     flex:1;
     display:flex;
@@ -163,7 +162,40 @@ transform:translateY(-15px);
 }
 
 }
+.menu{
 
+    padding:80px 8%;
+    background:#fff;
+
+}
+.menu h1{
+
+    text-align:center;
+    font-size:45px;
+    color:#222;
+    margin-bottom:20px;
+
+}
+.menu-intro{
+
+    text-align:center;
+    color:#666;
+    font-size:18px;
+    margin-bottom:50px;
+
+}
+.categorie-menu{
+    margin-bottom:60px;
+
+}
+.categorie-menu h2{
+
+    font-size:32px;
+    color:#ff7f50;
+    margin-bottom:30px;
+    border-left:5px solid #ff7f50;
+    padding-left:15px;
+}
 /*====================
 BOUTONS
 ====================*/
@@ -670,25 +702,54 @@ VALEURS & STATS
     color:#ff7f50;
     font-weight:bold;
 }
-@media(max-width:900px){
+footer{
 
-    .services-container,
-    .temoignage-container{
-        grid-template-columns:1fr;
-    }
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:40px 8%;
+    margin-top:50px;
 
-    .plats-container{
-        grid-template-columns:repeat(2,1fr);
-    }
+}
+
+
+footer h3{
+
+    color:#ff7f50;
+    font-size:30px;
+    margin-bottom:15px;
+
+}
+
+
+footer p{
+
+    color:#ddd;
+    margin-bottom:20px;
+
+}
+
+
+.social i{
+
+    font-size:25px;
+    margin:0 10px;
+    color:white;
+    transition:.3s;
+
+}
+
+
+.social i:hover{
+
+    color:#ff7f50;
+
 }
 @media(max-width:768px){
-
     /* Services */
     .services-container{
         grid-template-columns:1fr;
     }
-
-
     /* Témoignages */
     .temoignage-container{
         grid-template-columns:1fr;
@@ -699,28 +760,20 @@ VALEURS & STATS
     .plats-container{
         grid-template-columns:1fr;
     }
-
-
     /* Boissons */
     .boissons-container{
         flex-direction:column;
         align-items:center;
     }
-
-
     /* Contact */
     .contact-container{
         flex-direction:column;
     }
-
-
     /* Header */
     .entete{
         flex-direction:column;
         gap:20px;
     }
-
-
     nav ul{
         flex-direction:column;
         text-align:center;
