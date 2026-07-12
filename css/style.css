@@ -127,16 +127,6 @@ header{
     line-height:1.8;
     margin-bottom:30px;
 }
-
-.image-rotation{
-    flex:1;
-    display:flex;
-    justify-content:center;
-}
-
-.image-rotation img{
-    width:420px;
-}
 .services{
     display:flex;
     justify-content:space-between;
@@ -148,12 +138,10 @@ header{
     background-size:cover;
     background-position:center;
 }
-
 .services-content{
     flex:1;
     color:white;
 }
-
 .services-content h2{
     color:orange;
     font-size:45px;
@@ -164,11 +152,9 @@ header{
     font-size:20px;
     line-height:1.8;
 }
-
 .avantages{
     margin-top:25px;
 }
-
 .avantages p{
     margin:10px 0;
 }
@@ -253,10 +239,77 @@ textarea{
     border-radius:10px;
     font-size:16px;
 }
+.membres{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
 
+.membre{
+    background:#fff;
+    padding:25px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+.membre:hover{
+    transform:translateY(-10px);
+}
+
+.membre img{
+    width:170px;
+    height:170px;
+    object-fit:cover;
+    border-radius:50%;
+    margin:auto;
+    border:5px solid orange;
+}
+
+.membre h3{
+    margin-top:20px;
+}
+
+.membre p{
+    color:orange;
+    font-weight:bold;
+}
 textarea{
     min-height:150px;
     resize:vertical;
+}
+.histoire{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:50px;
+    margin-top:50px;
+}
+.image{
+    flex:1;
+}
+.image img{
+    width:100%;
+    max-width:500px;
+    border-radius:20px;
+    margin:auto;
+}
+
+.texte{
+    flex:1;
+}
+.texte h2{
+    color:#ff6b00;
+    margin-bottom:20px;
+    font-size:35px;
+}
+.texte p{
+    color:#555;
+    line-height:1.8;
+    text-align:justify;
+    margin-bottom:15px;
 }
 footer{
 
@@ -385,9 +438,26 @@ footer hr{
 }
 
 }
+.histoire{
+    flex-direction:column;
+}
 
-@media(max-width:480px){
+.image,
+.texte{
+    width:100%;
+}
 
+.image img{
+    max-width:100%;
+}
+
+.texte{
+    text-align:center;
+}
+
+.texte p{
+    text-align:justify;
+}
 section{
 
     padding:50px 15px;
@@ -435,6 +505,4 @@ button,
 
     width:100%;
     text-align:center;
-}
-
 }
