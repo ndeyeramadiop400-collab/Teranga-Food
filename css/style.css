@@ -327,28 +327,58 @@ form button:hover{
     color:#ff6b00;
     margin-bottom:40px;
 }
+/* =======================
+   VALEURS
+======================= */
 
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+.valeurs{
+    width:90%;
+    margin:80px auto;
+    text-align:center;
+}
+
+.valeurs h2{
+    color:#ff6b00;
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.cartes{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
     gap:30px;
 }
 
-.card img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
+.carte{
+    width:260px;
+    background:#fff;
+    padding:30px 20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.4s;
 }
 
-.card h2{
-    margin:15px 0;
+.carte:hover{
+    transform:translateY(-10px);
 }
 
-.card p{
-    padding:0 20px;
-    color:#555;
+.carte i{
+    font-size:45px;
+    color:#ff6b00;
+    margin-bottom:20px;
 }
 
+.carte h3{
+    margin-bottom:10px;
+    color:#222;
+}
+
+.carte p{
+    color:#666;
+    line-height:1.6;
+}
 .btn-commander{
     display:inline-block;
     margin:20px;
@@ -721,7 +751,14 @@ footer hr{
     .hero-image img{
         width:90%;
     }
+.cartes{
+    flex-direction:column;
+    align-items:center;
+}
 
+.carte{
+    width:90%;
+}
     .histoire{
         flex-direction:column;
     }
