@@ -116,13 +116,13 @@ header{
     color:white;
 }
 
-.hero .texte h2{
+.hero h2{
     font-size:50px;
     margin-bottom:20px;
     color:orange;
 }
 
-.hero .texte p{
+.hero p{
     font-size:20px;
     line-height:1.8;
     margin-bottom:30px;
