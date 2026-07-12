@@ -63,14 +63,15 @@ header{
 .logo span{
     color:orange;
 }
-
 .liens{
-    display:flex;
-    align-items:center;
-    gap:25px;
-    
-}
 
+    display:flex !important;
+    flex-direction:row !important;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+
+}
 .liens a{
     color:#222;
     display:flex;
@@ -428,7 +429,6 @@ footer hr{
     .liens{
 
         display:flex;
-        flex-direction:row;
         justify-content:center;
         gap:10px;
         flex-wrap:wrap;
@@ -491,7 +491,6 @@ footer hr{
     }
 
     .liens{
-        flex-direction:row;
         width:100%;
     }
 
