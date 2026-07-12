@@ -1,7 +1,3 @@
-/*==================================
-    TERANGA FOOD
-==================================*/
-
 *{
     margin:0;
     padding:0;
@@ -13,32 +9,34 @@ html{
 }
 
 body{
-    font-family:Arial,Helvetica,sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     overflow-x:hidden;
+    width:100%;
     background:#fff;
-    color:#222;
 }
 
 img{
     max-width:100%;
+    height:auto;
     display:block;
 }
-
 section{
+    width:100%;
     padding:80px 8%;
 }
-
-/*====================
-HEADER
-====================*/
-
+a{
+    text-decoration:none;
+}
+button{
+    cursor:pointer;
+}
 header{
     width:100%;
     background:#fff;
-    box-shadow:0 2px 10px rgba(0,0,0,.08);
     position:sticky;
     top:0;
     z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
 }
 
 .entete{
@@ -47,7 +45,7 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:15px 30px;
+    padding:15px 8%;
 }
 
 .logo{
@@ -57,7 +55,7 @@ header{
 }
 
 .logo img{
-    width:80px;
+    width:90px;
 }
 
 .logo h2{
@@ -65,279 +63,169 @@ header{
 }
 
 .logo span{
-    color:#ff6b00;
+    color:orange;
 }
 
 .liens{
     display:flex;
     align-items:center;
-    gap:18px;
+    gap:25px;
 }
 
 .liens a{
-    text-decoration:none;
     color:#222;
     display:flex;
     align-items:center;
     gap:6px;
-    padding:10px 16px;
-    border-radius:8px;
+    font-weight:bold;
     transition:.3s;
+    padding:8px 15px;
+    border-radius:8px;
 }
 
 .liens a:hover{
-    background:#ff6b00;
+    background:orange;
     color:white;
 }
-
-/*====================
-WELCOME
-====================*/
-
 .welcome{
-    background:#ff6b00;
+    width:100%;
+    background:orange;
     color:white;
-    padding:10px;
     text-align:center;
+    padding:12px;
     font-weight:bold;
 }
 
 .welcome marquee{
     font-size:18px;
 }
-
-/*====================
-HERO
-====================*/
-
 .hero{
-
     background:
-    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
     url("https://media.istockphoto.com/id/104704117/fr/photo/plats-du-restaurant.jpg?s=612x612&w=0&k=20&c=LjWTB5Ed9TlXG239T3apgo0GifWhLA1oQjxH84P1T2Q=");
     background-size:cover;
     background-position:center;
+
     display:flex;
     justify-content:space-between;
     align-items:center;
     gap:60px;
 }
-.hero h2{
-    color:orange;
-}
-.hero p{
-    color:white;
-}
-.texte{
+
+.hero .texte{
     flex:1;
     color:white;
 }
-.texte h2{
+
+.hero .texte h2{
     font-size:50px;
     margin-bottom:20px;
 }
-.texte p{
+
+.hero .texte p{
     font-size:20px;
     line-height:1.8;
     margin-bottom:30px;
 }
+
 .image-rotation{
     flex:1;
     display:flex;
     justify-content:center;
 }
+
 .image-rotation img{
-    width:300px;
-    animation:rotate 20s linear infinite;
+    width:420px;
 }
-@keyframes float{
-0%,100%{
-transform:translateY(0);
+.services{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url("https://img.magnific.com/free-photo/top-view-different-seasonings-with-greens-grey-background_140725-126048.jpg?semt=ais_hybrid&w=740&q=80");
+    background-size:cover;
+    background-position:center;
 }
-50%{
-transform:translateY(-15px);
-}
-}
-.menu{
 
-    padding:80px 8%;
-    background:#fff;
-
+.services-content{
+    flex:1;
+    color:white;
 }
-.menu h1{
 
-    text-align:center;
+.services-content h2{
+    color:orange;
     font-size:45px;
-    color:#222;
     margin-bottom:20px;
-
 }
-.menu-intro{
 
-    text-align:center;
+.services-content p{
+    font-size:20px;
+    line-height:1.8;
+}
+
+.avantages{
+    margin-top:25px;
+}
+
+.avantages p{
+    margin:10px 0;
+}
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h2{
+    margin:15px;
+    color:#222;
+}
+
+.card h3{
+    color:orange;
+    margin:0 15px;
+}
+
+.card p{
+    padding:15px;
     color:#666;
-    font-size:18px;
-    margin-bottom:50px;
+    line-height:1.6;
 }
-.categorie-menu{
-
-    margin-bottom:60px;
-
-}
-.categorie-menu h2{
-
-    font-size:32px;
-    color:#ff7f50;
-    margin-bottom:30px;
-    border-left:5px solid #ff7f50;
-    padding-left:15px;
-}
-.menu-container{
-
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:30px;
-
-}
-
-
-.menu-card{
-
-background:white;
-border-radius:15px;
-overflow:hidden;
-box-shadow:0 5px 20px rgba(0,0,0,.15);
-transition:.3s;
-
-}
-.menu-card:hover{
-
-transform:translateY(-10px);
-
-}
-.menu-card img{
-
-width:100%;
-height:230px;
-object-fit:cover;
-
-}
-.menu-card h3{
-
-font-size:22px;
-margin:15px;
-color:#222;
-
-}
-.menu-card p{
-
-margin:0 15px 15px;
-color:#666;
-line-height:1.6;
-
-}
-.menu-card .prix{
-
-margin:15px;
-font-size:20px;
-font-weight:bold;
-color:#ff7f50;
-}
-.reservation{
-    width: 80%;
-    margin: 80px auto;
-    text-align: center;
-}
-
-.reservation h2{
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-
-.reservation p{
-    margin-bottom: 30px;
-    color: #555;
-}
-.btn-commander{
-    margin-top: 15px;
-    padding: 12px 25px;
-    background: #ff6600;
-    color: #fff;
-    border: none;
-    border-radius: 30px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-    text-decoration: none;
-}
-
-.btn-commander:hover{
-    background: green;
-    transform: scale(1.05);
-}
-form{
-    background: #fff;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0,0,0,.15);
-}
-
-.champ{
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-label{
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-}
-
-input,
-select,
-textarea{
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 16px;
-}
-
-button{
-    background: orange;
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: .3s;
-}
-
-button:hover{
-    background: darkorange;
-    transform: scale(1.05);
-}
-/*====================
-BOUTONS
-====================*/
-
 .btn,
 .btn2,
 .btn-commande,
 .btn-commander,
 button{
 
-    background:#ff6b00;
-    color:white;
-    padding:15px 30px;
-    border:none;
-    border-radius:35px;
-    text-decoration:none;
     display:inline-block;
-    cursor:pointer;
-    transition:.3s;
+    background:orange;
+    color:white;
+    padding:14px 30px;
+    border:none;
+    border-radius:30px;
     font-weight:bold;
+    transition:.3s;
 }
 
 .btn:hover,
@@ -347,587 +235,206 @@ button{
 button:hover{
 
     background:#1B4332;
-    transform:translateY(-5px);
 }
-/*==================================
-SERVICES
-==================================*/
-.services{
-
-    min-height:500px;
-    background:
-    url("https://img.magnific.com/free-photo/top-view-different-seasonings-with-greens-grey-background_140725-126048.jpg?semt=ais_hybrid&w=740&q=80");
-
-    background-size:cover;
-    background-position:center;
-    background-attachment:fixed;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-
-    padding:80px 8%;
-
-}
-.services-content{
-
-    max-width:900px;
-    color:white;
-
-}
-.services-content h2{
-
-    color:orange;
-    font-size:45px;
-    margin-bottom:25px;
-}
-.services-content p{
-    line-height:1.8;
-    font-size:20px;
-    color:white;
-
-}
-.avantages{
-
-    margin-top:30px;
-}
-
-.avantages p{
-    margin:15px 0;
-    font-weight:bold;
-}
-
-/*==================================
-TITRES
-==================================*/
-
-.plats h1,
-.boissons h1,
-.commande h1,
-.temoignage h2,
-.valeurs h2,
-.equipe h2,
-.titre h1{
-
-    text-align:center;
-    color:#ff6b00;
-    margin-bottom:40px;
-    font-size:42px;
-}
-
-/*==================================
-CARDS
-==================================*/
-
-.cards{
-
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:30px;
-}
-
-.card{
-
-    background:white;
-    border-radius:18px;
-    overflow:hidden;
-    box-shadow:0 5px 15px rgba(0,0,0,.15);
-    transition:.4s;
-    text-align:center;
-}
-
-.card:hover{
-
-    transform:translateY(-10px);
-}
-
-.card img{
-
+form{
     width:100%;
-    height:220px;
-    object-fit:cover;
-}
-
-.card h2{
-
-    margin:20px 15px 10px;
-}
-
-.card h3{
-
-    color:#ff6b00;
-    margin-bottom:15px;
-}
-
-.card p{
-
-    padding:0 20px 20px;
-    color:#555;
-    line-height:1.6;
-}
-
-/*==================================
-TEMOIGNAGES
-==================================*/
-
-.temoignag{
-
-    background:#f7f7f7;
-    text-align:center;
-}
-
-.avis-container{
-
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
-}
-
-.avis{
-
-    background:white;
-    border-radius:18px;
-    padding:30px;
-    box-shadow:0 5px 15px rgba(0,0,0,.15);
-    transition:.4s;
-}
-
-.avis:hover{
-
-    transform:translateY(-10px);
-}
-
-.profil{
-
-    width:90px;
-    height:90px;
-    margin:auto;
-    border-radius:50%;
-    background:#ff6b00;
-    color:white;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:40px;
-}
-
-.avis h3{
-
-    margin:20px 0 10px;
-}
-
-.avis p{
-
-    color:#666;
-    line-height:1.8;
-}
-
-.avis h4{
-
-    color:gold;
-    margin-top:15px;
-}
-
-/*==================================
-HORAIRES
-==================================*/
-
-.horaires{
-
-    max-width:650px;
-    margin:80px auto;
-    background:white;
-    padding:35px;
-    border-radius:20px;
-    box-shadow:0 5px 15px rgba(0,0,0,.15);
-}
-
-.horaires h2{
-
-    color:#ff6b00;
-    text-align:center;
-    margin-bottom:15px;
-}
-
-.horaires p{
-
-    text-align:center;
-    margin-bottom:20px;
-}
-
-.horaire{
-
-    display:flex;
-    justify-content:space-between;
-    padding:15px 0;
-    border-bottom:1px solid #ddd;
-}
-
-/*==================================
-A PROPOS
-==================================*/
-
-.apropos{
-
-    max-width:1300px;
-    margin:auto;
-}
-
-.histoire{
-
-    display:flex;
-    align-items:center;
-    gap:50px;
-}
-
-.image,
-.texte{
-
-    flex:1;
-}
-
-.image img{
-
-    border-radius:20px;
-}
-
-.texte p{
-
-    line-height:1.8;
-    color:#555;
-}
-
-/*==================================
-EQUIPE
-==================================*/
-
-.equipe{
-
-    text-align:center;
-}
-
-.membres{
-
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-    gap:30px;
-}
-
-.membre{
-
-    background:white;
-    border-radius:20px;
-    padding:25px;
-    box-shadow:0 5px 15px rgba(0,0,0,.15);
-    transition:.4s;
-}
-
-.membre:hover{
-
-    transform:translateY(-10px);
-}
-
-.membre img{
-
-    width:160px;
-    height:160px;
-    border-radius:50%;
-    object-fit:cover;
-    margin:auto;
-}
-
-.membre h3{
-
-    margin:20px 0 10px;
-}
-
-.membre p{
-
-    color:#ff6b00;
-}
-
-/*==================================
-VALEURS & STATS
-==================================*/
-
-.cartes{
-
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-    gap:30px;
-}
-
-.carte,
-.stat-box{
-
-    background:white;
-    border-radius:18px;
-    padding:30px;
-    text-align:center;
-    box-shadow:0 5px 15px rgba(0,0,0,.15);
-}
-
-.carte i{
-
-    font-size:45px;
-    color:#ff6b00;
-    margin-bottom:20px;
-}
-
-.stats{
-
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:25px;
-}
-
-.stat-box{
-
-    background:#ff6b00;
-    color:white;
-}
-
-.stat-box h3{
-
-    font-size:35px;
-    margin-bottom:10px;
-}
-.plats{
-    padding:70px 8%;
-    text-align:center;
-}
-
-.plats h2{
-    font-size:35px;
-    margin-bottom:40px;
-}
-
-.plats-container{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:25px;
-}
-
-.plat-card{
-    background:#fff;
-    border-radius:15px;
-    overflow:hidden;
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
-    transition:.4s;
-}
-
-.plat-card:hover{
-    transform:scale(1.05);
-}
-
-.plat-card img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-}
-
-.plat-card h3{
-    margin:15px 0 5px;
-    color:#222;
-}
-
-.plat-card p{
-    color:#666;
-    padding:0 15px 15px;
-}
-
-.prix{
-    color:#ff7f50;
-    font-weight:bold;
-}
-footer{
-
-    background:#111;
-    color:white;
-    text-align:center;
-    padding:40px 8%;
-    margin-top:50px;
-
-}
-
-
-footer h3{
-
-    color:#ff7f50;
-    font-size:30px;
-    margin-bottom:15px;
-
-}
-
-
-footer p{
-
-    color:#ddd;
-    margin-bottom:20px;
-
-}
-
-
-.social i{
-
-    font-size:25px;
-    margin:0 10px;
-    color:white;
-    transition:.3s;
-
-}
-
-
-.social i:hover{
-
-    color:#ff7f50;
-
-}
-/*========================
- COMMANDE / RESERVATION
-========================*/
-
-
-.commande{
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:60px;
-
-    padding:80px 8%;
-
-    background:#fff7f2;
-
-}
-
-
-
-.commande-image{
-
-    flex:1;
-    display:flex;
-    justify-content:center;
-
-}
-
-
-
-.commande-image img{
-
-    width:450px;
-    max-width:100%;
-
-    animation:float 4s ease-in-out infinite;
-
-}
-.commande-form{
-    flex:1;
-    background:white;
-    padding:40px;
-    border-radius:25px;
-    box-shadow:
-    0 10px 30px rgba(0,0,0,.15);
-}
-.commande-form h2{
-    color:#ff6b00;
-    font-size:38px;
-    margin-bottom:15px;
-}
-.commande-form p{
-    color:#666;
-    line-height:1.6;
-    margin-bottom:25px;
-}
-.commande-form form{
     display:flex;
     flex-direction:column;
-    gap:15px;
+    gap:20px;
 }
-.commande-form input,
-.commande-form select,
-.commande-form textarea{
+
+input,
+select,
+textarea{
+
     width:100%;
     padding:15px;
     border:1px solid #ddd;
     border-radius:10px;
-font-size:16px;
-    outline:none;
+    font-size:16px;
 }
-.commande-form textarea{
-    height:120px;
-    resize:none;
+
+textarea{
+    min-height:150px;
+    resize:vertical;
 }
-.commande-form input:focus,
-.commande-form select:focus,
-.commande-form textarea:focus{
-    border-color:#ff6b00;
-}
-.commande-form button{
-    background:#ff6b00;
+footer{
+
+    background:#1f1f1f;
     color:white;
-    border:none;
-    padding:15px;
-    border-radius:30px;
-    font-size:18px;
-    font-weight:bold;
-    cursor:pointer;
-    transition:.3s;
-.commande-form button:hover{
-    background:#1B4332;
-    transform:translateY(-5px);
+    text-align:center;
+    padding:50px 20px;
 }
-@media(max-width:768px){
-    /* Services */
-    .services-container{
-        grid-template-columns:1fr;
-    }
-    /* Témoignages */
-    .temoignage-container{
-        grid-template-columns:1fr;
-    }
-.commande{
+
+footer h3{
+
+    color:orange;
+    margin-bottom:15px;
+}
+
+footer p{
+
+    margin:10px 0;
+    color:#ddd;
+}
+
+footer hr{
+
+    width:80%;
+    margin:25px auto;
+}
+
+.copyright{
+
+    color:#aaa;
+}
+@media(max-width:992px){
+
+.entete{
+    padding:15px 20px;
+}
+
+.hero,
+.services,
+.histoire,
+.reservation{
+
     flex-direction:column;
+    text-align:center;
 }
-.commande-form{
+
+.hero .texte,
+.hero .image-rotation,
+.services-content,
+.image,
+.texte,
+.reservation-image,
+.reservation-form{
 
     width:100%;
+}
+
+.hero .texte h2{
+    font-size:40px;
+}
+
+.cards{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.stats,
+.cartes,
+.membres{
+
+    justify-content:center;
+}
 
 }
 
-    /* Plats */
-    .plats-container{
-        grid-template-columns:1fr;
-    }
-    /* Boissons */
-    .boissons-container{
-        flex-direction:column;
-        align-items:center;
-    }
-    /* Contact */
-    .contact-container{
-        flex-direction:column;
-    }
-    /* Header */
-    .entete{
-        flex-direction:column;
-        gap:20px;
-    }
-    nav ul{
-        flex-direction:column;
-        text-align:center;
-    }
-    /* Titres */
-    .services h2,
-    .temoignage h2,
-    .plats h2,
-    .boissons h2,
-    .reservation h2,
-    .contact h2{
-        font-size:28px;
-    .reservation-container{
-        flex-direction:column;
-    }
-    }
+@media(max-width:768px){
+
+.logo img{
+    width:70px;
+}
+
+.logo h2{
+    font-size:24px;
+}
+
+.entete{
+
+    flex-direction:column;
+    gap:15px;
+}
+
+.liens{
+
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero{
+
+    padding:60px 20px;
+}
+
+.hero .texte h2{
+    font-size:32px;
+}
+
+.hero .texte p{
+    font-size:17px;
+}
+
+.cards{
+
+    grid-template-columns:1fr;
+}
+
+.card{
+
+    width:100%;
+}
+
+.stat-box,
+.carte,
+.membre{
+
+    width:100%;
+    max-width:320px;
+}
+
+}
+
+@media(max-width:480px){
+
+section{
+
+    padding:50px 15px;
+}
+
+.logo img{
+    width:60px;
+}
+
+.logo h2{
+    font-size:20px;
+}
+
+.liens{
+
+    gap:8px;
+}
+
+.liens a{
+
+    font-size:14px;
+    padding:8px;
+}
+
+.hero .texte h2{
+
+    font-size:28px;
+}
+
+.hero .texte p{
+
+    font-size:16px;
+}
+
+.card img{
+
+    height:200px;
+}
+
+button,
+.btn,
+.btn2,
+.btn-commande,
+.btn-commander{
+
+    width:100%;
+    text-align:center;
+}
+
 }
