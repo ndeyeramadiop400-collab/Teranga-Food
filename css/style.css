@@ -338,14 +338,14 @@ SERVICES
 }
 .services-content h2{
 
-    color:black;
+    color:orange;
     font-size:45px;
     margin-bottom:25px;
 }
 .services-content p{
     line-height:1.8;
     font-size:20px;
-    color:black;
+    color:white;
 
 }
 .avantages{
@@ -354,7 +354,6 @@ SERVICES
 }
 
 .avantages p{
-
     margin:15px 0;
     font-weight:bold;
 }
