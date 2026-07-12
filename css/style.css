@@ -41,7 +41,21 @@ header{
 .logo span{
     color:orange;
 }
+/* =======================
+   WELCOME
+======================= */
 
+.welcome{
+    background:orange;
+    color:white;
+    padding:10px 0;
+    text-align:center;
+    font-weight:bold;
+}
+
+.welcome marquee{
+    font-size:18px;
+}
 .liens{
     display:flex;
     align-items:center;
