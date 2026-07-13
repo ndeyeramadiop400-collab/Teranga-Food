@@ -193,6 +193,12 @@ header{
     margin-bottom:30px;
     color:white;
 }
+.hero-image img{
+    width:300px;
+    max-width:100%;
+    height:auto;
+    border-radius:20px;
+}
 .services{
     display:flex;
     justify-content:space-between;
