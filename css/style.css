@@ -655,6 +655,10 @@ footer hr{
     .cartes{
         grid-template-columns:1fr;
     }
+    .reservation-form{
+        width:90%;
+        padding:25px;
+    }
     .logo img{
         width:70px;
     }
@@ -698,53 +702,27 @@ footer hr{
     text-align:center;
 
     border-radius:20px;
-
     box-shadow:0 5px 15px rgba(0,0,0,.15);
-
 }
-
-
 .stat-box h3{
-
     font-size:40px;
-
     color:orange;
-
     margin-bottom:15px;
-
 }
-
-
 .stat-box p{
-
     color:#555;
-
     font-size:18px;
-
 }
-
-
-
-@media(max-width:768px){
-
     .stats{
-
         grid-template-columns:repeat(2,1fr);
-
         padding:40px 5%;
-
     }
-
-}
-
-
-
 @media(max-width:425px){
-
     .stats{
-
         grid-template-columns:1fr;
-
     }
-
+.reservation-form{
+width:92%;
+padding:20px;
+}
 }
