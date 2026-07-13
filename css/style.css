@@ -442,19 +442,28 @@ button:hover{
     transform:translateY(-5px);
 }
 /* Bouton du Hero */
-.btn-commande{
+.btn-commande,
+.btn2{
     display:inline-block;
-    background:#ff6b00;
-    color:white;
+    margin-top:20px;
     padding:15px 30px;
-    border-radius:10px;
+    background:orange;
+    color:white;
     text-decoration:none;
-    font-size:18px;
+    border-radius:30px;
     font-weight:bold;
-    transition:.3s;
+    transition:0.3s;
 }
-.btn-commande:hover{
+
+.btn-commande:hover,
+.btn2:hover{
     background:#1B4332;
+    transform:translateY(-5px);
+}
+.btn-commande,
+.btn2{
+    min-width:220px;
+    text-align:center;
 }
 .membres{
     display:grid;
