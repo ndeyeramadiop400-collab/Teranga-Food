@@ -402,7 +402,7 @@ header{
 }
 .reservation-image img{
     width:100%;
-    max-width:380px;
+    max-width:500px;
     height:auto;
     border-radius:20px;
     display:block;
@@ -656,8 +656,8 @@ footer hr{
         grid-template-columns:1fr;
     }
     .reservation-form{
-        width:90%;
-        padding:25px;
+        width:95%;
+        padding:30px 20px;
     }
     .logo img{
         width:70px;
