@@ -620,8 +620,10 @@ footer hr{
 }
 @media(max-width:768px){
  .entete{
-        flex-direction:row;
+        flex-direction:column;
         padding:10px;
+     align-items:center;
+     gap:10px;
     }
     .logo h2{
         font-size:18px;
@@ -632,12 +634,12 @@ footer hr{
     .liens{
         display:flex;
         flex-direction:row;
-        gap:0;
-        flex-wrap:nowrap;
+        gap:10px;
+        justify-content:center;
     }
     .liens a{
-        padding:5px;
-        font-size:11px;
+        padding:6px 10px;
+        font-size:13px;
         white-space:nowrap;
     }
      .stats{
@@ -679,20 +681,12 @@ footer hr{
 }
 }
 .stats{
-
     width:100%;
-
     display:grid;
-
     grid-template-columns:repeat(4,1fr);
-
     gap:25px;
-
     padding:60px 8%;
-
 }
-
-
 .stat-box{
 
     background:white;
@@ -722,7 +716,8 @@ footer hr{
         grid-template-columns:1fr;
     }
 .reservation-form{
-width:92%;
-padding:20px;
+width:95%;
+padding:30px 20px;
+    align-self:center;
 }
 }
