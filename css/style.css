@@ -355,6 +355,23 @@ header{
     color:#666;
     line-height:1.6;
 }
+.btn-commander{
+    display:inline-block;
+    margin:20px auto;
+    padding:12px 28px;
+    background:orange;
+    color:#fff;
+    text-decoration:none;
+    border-radius:30px;
+    font-size:16px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn-commander:hover{
+    background:#1B4332;
+    transform:translateY(-5px);
+}
 /* SECTION COMMANDE */
 .commande{
     padding:80px 8%;
@@ -584,6 +601,7 @@ footer{
     color:white;
     text-align:center;
     padding:50px 20px;
+    width:100%;
 }
 footer h3{
     color:orange;
