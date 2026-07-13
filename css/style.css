@@ -362,12 +362,12 @@ header{
     text-align:center;
 }
 .commande h1{
-    font-size:45px;
+    font-size:20px;
     color:#ff6b00;
     margin-bottom:15px;
 }
 .commande p{
-    font-size:20px;
+    font-size:10px;
     color:#555;
     max-width:700px;
     margin:0 auto 40px;
@@ -385,7 +385,7 @@ header{
 }
 .reservation-image img{
     width:100%;
-    max-width:300px;
+    max-width:350px;
     height:auto;
     border-radius:20px;
     display:block;
@@ -407,11 +407,12 @@ header{
 .reservation-form h2{
     font-size:20px;
     margin-bottom:10px;
+    color:orange;
 }
 .reservation-form p{
     color:gray;
     margin-bottom:25px;
-    font-size: 18px;
+    font-size: 10px;
 }
 form{
     display:flex;
