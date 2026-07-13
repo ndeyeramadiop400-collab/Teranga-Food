@@ -402,7 +402,7 @@ header{
 }
 .reservation-image img{
     width:100%;
-    max-width:350px;
+    max-width:380px;
     height:auto;
     border-radius:20px;
     display:block;
