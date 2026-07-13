@@ -139,7 +139,7 @@ header{
 .liens a{
     color:#222;
     display:flex;
-    align-items:left;
+    align-items:centre;
     gap:6px;
     font-weight:bold;
     transition:.3s;
@@ -182,7 +182,7 @@ header{
 }
 
 .hero h2{
-    font-size:50px;
+    font-size:30px;
     margin-bottom:20px;
     color:orange;
 }
@@ -606,7 +606,7 @@ footer hr{
         padding:10px;
     }
     .logo h2{
-        font-size:20px;
+        font-size:18px;
     }
     .logo img{
         width:50px;
